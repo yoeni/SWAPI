@@ -5,7 +5,6 @@ const router=express.Router();
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 
 
-//dbden bütün filmleri json olarak gönder
 router.get('/',(req,res)=>{
     fetch(req.query.page+"?format=json")
     .then(res => res.json())
