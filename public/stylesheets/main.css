@@ -1,0 +1,109 @@
+body{
+    justify-content: center;
+    align-content: center;
+    text-align:center ;
+    color: white;
+    font-family: Agency FB;
+    background-color: rgb(31, 31, 31);
+}
+table{
+    height: 100%;
+    width: 100%;
+    border: 1 solid black;
+    border-color:red;
+    border-width: 1;
+}
+input[type=text] {
+    border: 2px solid red;
+    border-radius: 4px;
+    font-size:x-large;
+    font-family: Agency FB;
+    width: 30%;
+}
+ul{
+    color: black;
+    list-style-type:none; 
+    overflow:hidden;
+    height: 80vh; 
+    overflow-y:scroll;
+    background-color: rgb(63, 63, 63);
+    padding: inherit;
+    display: block;
+}
+ul li{
+    height: 40px;
+    border-bottom: 1px;
+    border-radius: 1%;
+    background:#dadada;;
+    margin-bottom: 3px;
+    display: grid;
+    align-content: center;
+    transition: 1s;
+}
+ul li:hover{
+    font-size: 250%;
+    background-color:white;
+    color: black;
+    text-shadow: 1px 1px yellow;
+    font-weight: bold;
+    height: 60px;
+    border-width: 3px;
+    border-color: #8d0b0b;
+    border-style: solid;
+}
+th{
+    text-align: center;
+    width: 30%;
+}
+ol{
+    align-self: center;
+    display: inline-grid;
+    width: fit-content;
+}
+div{
+    align-self: center;
+    text-align: left;
+    display: inline-block;
+}
+.myPerson th{
+    text-align: left;
+    width: max-content;
+}
+.myPerson th b{
+    color: yellow;
+    font-weight: bold;
+}
+.title{
+    font-size: 150%;
+    border-bottom-width:initial;
+    animation-duration: 1s;
+    animation-name: titleAnim;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes titleAnim {
+    from {
+        color: white;
+    }
+  
+    to {
+        border-bottom:solid black;
+        text-shadow: 1px 1px yellow;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: black; 
+}
